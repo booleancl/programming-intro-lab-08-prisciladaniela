@@ -3,3 +3,25 @@
 # palabra reservada class
 # 
 
+class Student: 
+    def __init__(self,name,position,skills):
+        self.name = name
+        self.position = position
+        self.skills = skills
+
+    def say_name(self):
+        print("Mi nombre es", self.name,",mi puesto de trabajo es",self.position,"y mis habilidades son",self.skills)
+        
+alice = Student ("Alice","Fullstack Developer","Python,Git,HTML,CSS,Javascript")
+bob = Student("Bob","chef","responsable y compañerismo" )
+
+
+
+print(type(Student))
+
+alice.say_name()
+bob.say_name()
+
+  
+
+
